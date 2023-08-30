@@ -1,0 +1,93 @@
+main,*{
+    border: none;
+    color:#fff; 
+    padding: 0; 
+    margin:0; 
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: clamp(14px, 4vw, 24px);
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 80vw;
+    max-width:450px;
+    margin: 0 auto;
+}
+body {
+    background-color: #639;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flameLogo{
+    width: calc(100% + 30px);
+    max-width: 480px;
+}
+input{
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background: rgba(0,0,0,.35);
+    text-align: center;
+    margin:40px 0 30px 0;
+    width: 100%;
+    &::placeholder{
+        color:rgba(211, 211, 211, 0.80);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.buttonCall{
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+    width: calc(100% + 30px);
+    background: #217635;
+    color: #ffffff92;
+    font-weight: 300;
+    font-size: 20px;
+    pointer-events: none;
+    cursor: default;
+    &.active {
+        cursor: pointer;
+        background: #29ad48;
+        pointer-events: initial;
+        &:hover{
+            background: #217635;
+        }
+    }
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 30px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .social{
+        a{
+            margin-right:15px;
+        }
+    }
+    a{
+        opacity: .7; 
+        color: #fff; 
+        font-size: 15px;
+
+        &:hover {opacity: 1;}
+    }
+
+    .version{
+        font-size: 12px;
+        margin-top: 3px;
+        margin-left: 15px;
+    }   
+}
